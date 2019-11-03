@@ -1,0 +1,133 @@
+body {
+background: linear-gradient(to right, #0cebeb, #20e3b2, #29ffc6);
+transition: 10s;  
+
+}
+
+.input {
+    
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 20px;   
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+       font-family: 'Montserrat', sans-serif;
+    margin-left: 41%;
+    margin-top: 10%;
+    color: white;
+}
+
+.submit{
+    
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 10px;
+    font-size: 20;
+    padding: 10px;
+    color: #84fab0;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+}
+
+@keyframes fade {
+    from {background-color: white; color: #84fab0;}
+    to {background-color: transparent; color: white;}    
+    
+}
+.submit:hover{
+    background-color: transparent;
+    color: white;
+    animation-name: fade;
+    animation-duration: 1s;
+  } 
+    
+
+
+form {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20;
+    margin-left: 34%;
+    margin-top: 2%;
+    margin-right: 37%;
+    margin-bottom: 13%;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+    
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+Malaria {
+    display: flex;
+        margin-bottom: 20px;   
+    
+}

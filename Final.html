@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	<title>MedicalMiracle</title>
+	<link rel="stylesheet" type="text/css" href="medbot.css">
+ 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<div class="Header">
+<nav class="nav">
+            <a href="final.html">
+            <img class="logo" src="MDS.jfif"></img>
+            </a>
+            <ul class="menu">   
+            <li><a href="Behavior.html"> Stats </a></li>
+            </ul>   
+        
+        </nav> 
+    
+</div>
+
+    
+</body>
+<div class="container">
+<input type="file" id="real-file" hidden="hidden" />
+<button class="upl" type="button" id="custom-button">CHOOSE A FILE</button>
+    <span id="custom-text">No file chosen, yet.</span>
+    
+    <a class="submit" href="Malaria.html">Submit</a>
+    
+<script type="text/javascript">
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+</script>
+
+
+    
+    <form method="get" action="data.csv">
+   <button class="button" type="submit">New to Malaria Detection System? Click here to download the patient info CSV!</button>
+</form>
+</div>
+
+
+</html>

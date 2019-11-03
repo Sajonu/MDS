@@ -1,0 +1,49 @@
+
+body {
+background: linear-gradient(63deg, #2dff88, #239956, #15522f);
+background-size: 600% 600%;
+
+animation: AnimationName 4s ease infinite;
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+}
+
+h1{
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+buttons {
+    margin-left: 40%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: #84fab0;
+    margin-top: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+  
+}
+
+a:hover {
+    background-color: none;
+    color: #84fab0;
+    background-color: white;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+
+
+@keyframes fade {
+    from {background-color: #84fab0; color: #fff;}
+    to {background-color: white; color: #84fab0}
+  }
